@@ -1,0 +1,25 @@
+.visa-table {
+    width: 100%;
+    border-collapse: collapse; 
+    border: 1px solid #000; 
+}
+
+.visa-table th, .visa-table td {
+    border: 1px solid #000; 
+    text-align: left;
+    padding: 8px;
+    font-size: 14px;
+}
+
+.visa-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.visa-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.visa-table td {
+    vertical-align: top;
+}

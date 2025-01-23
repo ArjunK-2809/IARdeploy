@@ -1,0 +1,134 @@
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.video-card {
+  width: 100%;
+  max-width: 300px;
+  margin: 15px;
+  background-color: #181818;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.video-card-youtube {
+  max-width: 700px;
+  width: 100%;
+  margin: 15px auto;
+  background-color: #181818;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.ytvideo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.ytvideo-card {
+  margin: 15px;
+  background-color: #181818;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+
+.video-card-youtube iframe, .video-thumbnail {
+  width: 100%;
+  height: auto;
+}
+
+
+
+  
+  .video-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .video-thumbnail {
+    position: relative;
+  }
+  
+  .video-thumbnail video {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #333;
+  }
+  
+  .video-duration {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 2px 6px;
+    font-size: 12px;
+    color: white;
+    border-radius: 4px;
+  }
+  
+  .video-info {
+    padding: 10px;
+    color: #fff;
+  }
+  
+  .video-title {
+    font-size: 16px;
+    margin: 0 0 5px;
+  }
+  
+  .video-stats {
+    font-size: 14px;
+    color: #bbb;
+  }
+  
+
+  video:fullscreen {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+  
+
+  .exit-fullscreen-btn {
+    background-color: #f44336; 
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .exit-fullscreen-btn:hover {
+    background-color: #d32f2f; 
+  }
+
+  .video-card:hover, .video-card-youtube:hover {
+    transform: scale(1.05);
+}
+  @media (max-width: 768px) {
+    .video-card, .video-card-youtube {
+        max-width: 100%; /* Full width for smaller screens */
+    }
+}
+
+@media (min-width: 768px) {
+  .video-card {
+    width: 300px; /* Set specific width for larger screens */
+  }
+  .video-card-youtube {
+    width: 700px;
+  }
+}

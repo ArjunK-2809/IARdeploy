@@ -1,0 +1,40 @@
+/* table.css */
+.breadcrumb {
+    margin-bottom: 20px;
+  }
+  
+  .breadcrumb a {
+    color: #666;
+    text-decoration: none;
+  }
+  
+  .opportunities-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .opportunities-table th,
+  .opportunities-table td {
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    text-align: left;
+  }
+  
+  .opportunities-table th {
+    border-top: 1px solid #ddd;
+    font-weight: 600;
+  }
+  
+  .university-name {
+    color: #F5A623;
+  }
+  
+  .university-link {
+    color: #F5A623;
+    text-decoration: none;
+  }
+  
+  .university-link:hover {
+    text-decoration: underline;
+  }

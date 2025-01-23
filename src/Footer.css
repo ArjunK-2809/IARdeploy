@@ -1,0 +1,69 @@
+.link {
+  color: black;
+  text-decoration: none;
+}
+
+.footer {
+  background-image: url('./assets/HostelSahyadri2.jpg');
+
+
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  text-align: left;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+.column {
+  flex: 1;
+  padding: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
+  text-align: left;
+  min-width: 200px;
+}
+
+ul {
+  padding-left: 20px;
+  list-style-position: outside;
+}
+
+/* Media Query for Tablets and Smaller Devices */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .footer-image {
+    max-width: 100%; 
+    padding: 0;
+  }
+
+  .column {
+    font-size: medium;
+    padding: 10px 0;
+  }
+}
+
+/* Media Query for Small Devices (Mobile) */
+@media (max-width: 480px) {
+  .footer {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .column {
+    font-size: small;
+    padding: 5px 0;
+  }
+
+  .link {
+    font-size: small;
+  }
+}

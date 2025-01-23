@@ -1,0 +1,53 @@
+.sparc-page {
+    width: 100%;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.sparc-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sparc-header h1 {
+    color: #f4a641;
+}
+
+.sparc-content {
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sparc-content h2 {
+    color: #f4a641;
+    margin-top: 20px;
+}
+
+.sparc-content p, 
+.sparc-content ul {
+    color: #333;
+    line-height: 1.6;
+}
+
+.sparc-content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.sparc-content a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.sparc-content a:hover {
+    text-decoration: underline;
+}
+
+.sparc-content strong {
+    font-weight: bold;
+}

@@ -1,0 +1,38 @@
+.column{
+    display: flex;
+    flex-direction: row;
+
+}
+.column1{
+    width: 33%;
+}
+.column2{
+    width: 33%;
+}
+.column3{
+    width: 33%;
+}
+
+.ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #E94C26;
+}
+a:hover{
+    color: #ec7153;
+}
+
+@media (max-width: 768px) {
+    .column {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column1, .column2, .column3 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

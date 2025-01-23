@@ -1,0 +1,393 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #002147; /* Example: Dark blue */
+  padding: 10px 20px;
+  border-bottom: 1px solid black;
+  color: white;
+  flex-wrap: wrap;
+}
+
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+
+.navbar-brand img {
+  margin-right: 10px;
+  height: 48px;
+
+}
+
+.navbar-links {
+display: flex;
+gap: 15px;
+align-items: center;
+}
+
+.navbar-links a {
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 5px 10px;
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-links a:hover {
+background-color: #0056b3; /* Example: Lighter blue on hover */
+}
+
+
+.navbar .search-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar .search-container input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-container h4 {
+  margin: 0;
+  font-size: 14px;
+
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  min-width: 150px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  opacity: 0; /* Ensure smooth transition */
+  visibility: hidden; /* Prevent accidental focus */
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu,
+.dropdown-menu:hover {
+  display: flex; /* Or block, based on your needs */
+  opacity: 1;
+  visibility: visible;
+  }
+
+
+.dropdown-menu a {
+  padding: 5px 10px;
+ 
+  white-space: nowrap;
+
+  color: #002147;
+  text-decoration: none;
+  padding: 10px 20px;
+
+}
+
+.dropdown-menu a:hover {
+  background-color: #f0f0f0;
+  color: red;
+}
+
+.dropdown-submenu {
+  margin-left: 2px;
+}
+
+
+.dropdown-item {
+  position: relative;
+}
+
+.dropdown-submenu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  z-index: 999;
+  min-width: 200px;
+  padding: 10px;
+}
+
+.dropdown-item:hover .dropdown-submenu {
+  display: flex; 
+  flex-direction: column;
+}
+
+.dropdown-submenu a {
+display: flex;
+padding: 5px 10px;
+color: #333;
+text-decoration: none;
+}
+
+.dropdown-submenu a:hover {
+background-color: #f1f1f1;
+}
+
+
+/* Nested Dropdown Styles */
+.nested-dropdown {
+position: relative;
+}
+
+.nested-dropdown-menu {
+display: flex;
+position: absolute;
+top: 0;
+left: 100%;
+background-color: white;
+border: 1px solid #ccc;
+padding: 10px;
+min-width: 150px;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nested-dropdown-menu a {
+padding: 5px 10px;
+text-decoration: none;
+color: black;
+white-space: nowrap;
+}
+
+.nested-dropdown-menu a:hover {
+background-color: #f0f0f0;
+color: red;
+}
+
+/* Hide menu toggle by default */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 5px 10px;
+}
+
+/* Secondary navbar  */
+
+.navbar-secondary {
+
+  display: flex;
+  background-color: #003366;
+  padding: 5px 20px;
+  border-bottom: 1px solid black;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.navbar-secondary a {
+  display: inline-block; /* Ensure horizontal alignment */
+  text-decoration: none; /* Optional: Remove underline */
+  padding: 5px 10px; /* Optional: Add padding */
+}
+
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  display: flex;
+  justify-content: center; /* Center the items */
+  align-items: center; /* Align items vertically */
+  gap: 20px; /* Add spacing between items */
+  width: 100%; /* Full width */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+
+.navbar-secondary .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 10;
+}
+
+.navbar-secondary .dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
+.navbar-secondary .dropdown-menu a {
+  color: #002147;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: flex;
+}
+
+.navbar-secondary .dropdown-menu a:hover {
+  background-color: #f1f1f1;
+}
+
+.nav-lk {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s;
+}
+
+.nav-lk:hover {
+  color: rgb(86, 86, 87);
+  text-decoration: none;
+}
+
+.temp {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+  flex-direction: column;
+  align-items: stretch;
+  flex-wrap: wrap;
+  }
+
+  .navbar-links {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  background-color: #002147;
+  text-align: center;
+  padding: 10px 0;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+  }
+  
+  .navbar-links a {
+      padding: 10px 0;
+  }
+
+  .navbar .search-container {
+  margin-top: 10px;
+  text-align: center;
+  }
+  
+  .navbar-links.active {
+  display: flex;
+  }
+
+  .menu-toggle {
+  display: block;
+  cursor: pointer;
+  font-size: 24px;
+  color: white;
+  align-self: flex-end;
+  background: none;
+  border: none;
+  padding: 5px 10px;
+  }
+
+  .secondary-navbar {
+  flex-direction: column;
+  text-align: center;
+  padding: 5px 0;
+  }
+
+  .secondary-navbar a {
+  margin: 10px 0;
+  }
+
+  .navbar-secondary {
+  flex-direction: column;
+  align-items: flex-start;
+  }
+
+  .dropdown-menu {
+  position: static;
+  box-shadow: none;
+  border: none;
+  }
+
+  
+
+  /* Make the search bar responsive */
+  .navbar .search-container {
+  width: 100%; /* Ensure it doesn't exceed the screen width */
+  justify-content: center; /* Center the search bar */
+  margin-top: 10px;
+  }
+
+  .navbar .search-container input {
+  width: 70%; /* Adjust input width for better fit on mobile */
+  }
+
+  .navbar .search-container button {
+  width: 30%; /* Adjust button width for better fit on mobile */
+  }
+
+  .navbar {
+  align-items: stretch;
+  }
+
+  .navbar-links {
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+  }
+  .secondary-navbar {
+  flex-direction: column;
+  text-align: center;
+  padding: 5px 0;
+  }
+
+  .secondary-navbar a {
+  margin: 10px 0;
+  }
+
+  .navbar-secondary {
+  flex-direction: column;
+  align-items: flex-start;
+  }
+
+  .dropdown-menu {
+  position: static;
+  box-shadow: none;
+  border: none;
+  } 
+
+  .navbar-links.active,
+  .navbar-secondary .navbar-links.active {
+  display: flex;
+  flex-direction: column;
+  }
+
+  .search-container{
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  }
+
+  .temp {
+    flex-direction: column;
+  }
+
+}
+
