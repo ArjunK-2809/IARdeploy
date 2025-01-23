@@ -199,9 +199,9 @@ const Navbar = () => {
             onMouseEnter={() => handleDropdown("mous")}
             onMouseLeave={() => handleDropdown(null)}
           >
-            <a href="/MoUs" className="nav-lk">
+            <Link to="/MoUs" className="nav-lk">
               MOU Partners
-            </a>
+            </Link>
             {activeDropdown === "mous" && (
               <div className="dropdown-menu">
               <Link to="/MoUs#partners">Our  Partners and Programs</Link>
