@@ -67,7 +67,7 @@ const Navbar = () => {
           <Link to="/">Home</Link>
           <Link to="/about">About Us</Link>
           <Link to="/life">Life @ IITPKD</Link>
-          <Link to="https://iitpkd.ac.in/">IIT PKD main</Link>
+          <a href="https://iitpkd.ac.in/" target="blank">IIT PKD main</a>
         </div>
 
         <div className="search-container">
