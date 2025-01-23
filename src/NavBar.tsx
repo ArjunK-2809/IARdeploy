@@ -64,10 +64,10 @@ const Navbar = () => {
         >
 
         <div className="search-container">
-          <a href="/">Home</a>
-          <a href="/about">About Us</a>
-          <a href="/life">Life @ IITPKD</a>
-          <a href="https://iitpkd.ac.in/">IIT PKD main</a>
+          <Link to="/">Home</Link>
+          <Link to="/about">About Us</Link>
+          <Link to="/life">Life @ IITPKD</Link>
+          <Link to="https://iitpkd.ac.in/">IIT PKD main</Link>
         </div>
 
         <div className="search-container">
