@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./Navbar.css";
+import "./NavBar.css";
 import image from "./assets/iar.png";
 import {Link} from 'react-router-dom';
 import FactSheet from './files/Factsheet IITPKD.pdf'
