@@ -1,5 +1,5 @@
 import './common.css'
-import './Visa.css'
+import './VISA.css'
 function VISAextensions(){
     return (
         <div className='page'>
