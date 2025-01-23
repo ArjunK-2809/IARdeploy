@@ -1,5 +1,5 @@
 import './common.css'
-import './Visa.css'
+import './VISA.css'
 
 function VISAtypes(){
     return (
