@@ -4,6 +4,8 @@ import image from "./assets/iar.png";
 import {Link} from 'react-router-dom';
 import FactSheet from './files/Factsheet IITPKD.pdf'
 import Flyer from './files/Flyer_IITPKD.pdf'
+import Offcanvas from 'react-bootstrap/Offcanvas';
+
 
 const Navbar = () => {
 
@@ -11,6 +13,11 @@ const Navbar = () => {
   const [isMobileMenuOpenSecondary, setIsMobileMenuOpenSecondary] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [currentTime, setCurrentTime] = useState(new Date());
+  
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -20,15 +27,6 @@ const Navbar = () => {
     return () => clearInterval(timer);
   }, []);
 
-  const toggleMobileMenuPrimary = () => {
-    
-    setIsMobileMenuOpenPrimary(!isMobileMenuOpenPrimary);
-  };
-
-  const toggleMobileMenuSecondary = () => {
-    
-    setIsMobileMenuOpenSecondary(!isMobileMenuOpenSecondary);
-  };
 
   const handleDropdown = (menu:any) => {
     setActiveDropdown(activeDropdown === menu ? null : menu);
@@ -52,10 +50,6 @@ const Navbar = () => {
           />
           
         </a>
-
-      <button className="menu-toggle"  onClick={toggleMobileMenuPrimary}>
-          ☰
-      </button>
         <div
           className={`navbar-links ${
             isMobileMenuOpenPrimary ? "active" : ""
@@ -67,6 +61,7 @@ const Navbar = () => {
           <Link to="/">Home</Link>
           <Link to="/about">About Us</Link>
           <Link to="/life">Life @ IITPKD</Link>
+          <Link to="/students"> Our Foreign students </Link>
           <a href="https://iitpkd.ac.in/" target="blank">IIT PKD main</a>
         </div>
 
@@ -74,14 +69,15 @@ const Navbar = () => {
          <h4>{currentTime.toLocaleString()} IST</h4>
         </div>
       </div>
+      <button className="menu-toggle" onClick={handleShow}>
+         ☰
+      </button> 
       </nav>
 
       {/* Secondary Navbar */}
       <nav className="navbar navbar-secondary">
 
-      <button className="menu-toggle" onClick={toggleMobileMenuSecondary}>
-          ☰
-        </button>
+      
         <div
           className={`navbar-links ${
             isMobileMenuOpenSecondary ? "active" : ""
@@ -233,7 +229,22 @@ const Navbar = () => {
         
  
         </div>
-        
+        <Offcanvas show={show} onHide={handleClose}>
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title> International Relations IIT PALAKKAD </Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+          <div className="">
+          <Link to="/">Home</Link>
+          <Link to="/about">About Us</Link>
+          <Link to="/life">Life @ IITPKD</Link>
+          <Link to="/students"> Our Foreign students </Link>
+          <a href="https://iitpkd.ac.in/" target="blank">IIT PKD main</a>
+          <Link to="/"> Visit Template </Link>
+          <Link to="/"> Downloads </Link>
+          </div>
+        </Offcanvas.Body>
+      </Offcanvas>
       </nav>
     </>
   );

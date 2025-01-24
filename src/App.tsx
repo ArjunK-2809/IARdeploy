@@ -5,6 +5,7 @@ import {BrowserRouter as Router, Routes, Route,} from 'react-router-dom';
 
 
 import Home from "./Home";
+import Students from "./Students";
 import AboutUs from "./pages/AboutUs";
 import Life from "./pages/Life";
 import Contact from "./pages/Contact";
@@ -48,6 +49,7 @@ function App() {
             <Route path="/about" element={<AboutUs />} />
             <Route path="/life" element={<Life />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/students" element={<Students />} />
             <Route path="/applications" element={<SAMPP />} />
             <Route path="/sii" element={<SII />} />
             <Route path="/asean" element={<ASEAN />} />

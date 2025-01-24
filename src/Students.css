@@ -1,0 +1,45 @@
+.students-carousel .carousel {
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .students-carousel .carousel img {
+    object-fit: cover;
+    height: 400px;
+  }
+  
+  .students-carousel .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border-radius: 5px;
+    bottom: 20px;
+  }
+  
+  .students-carousel .carousel-caption h5,
+  .students-carousel .carousel-caption p {
+    color: #fff;
+    margin: 0;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  .students-carousel .carousel-indicators [data-bs-target] {
+    background-color: #007bff;
+    border: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+  
+  .students-carousel .carousel-indicators [data-bs-target].active {
+    background-color: #0056b3;
+  }
+  
+  .students-carousel .carousel-control-prev-icon,
+  .students-carousel .carousel-control-next-icon {
+    filter: invert(100%);
+  }
+  
