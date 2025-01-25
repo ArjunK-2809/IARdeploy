@@ -262,6 +262,59 @@ white-space: nowrap;
   display: flex;
   flex-direction: row;
 }
+.custom-navbar {
+  background-color: #f8f9fa; /* Light background color */
+  padding: 20px;
+  border-radius: 8px;
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-navbar a {
+  color: #007bff; /* Blue text */
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.custom-navbar a:hover {
+  color: #0056b3; /* Darker blue on hover */
+  text-decoration: underline;
+}
+
+.custom-navbar h1 {
+  font-size: 1.5rem;
+  color: #343a40; /* Dark gray */
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #007bff; /* Underline with blue */
+  padding-bottom: 5px;
+}
+
+.custom-navbar h4 {
+  font-size: 1.2rem;
+  color: #495057; /* Medium gray */
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+
+.custom-navbar a:last-child {
+  margin-right: 0; /* Remove margin for the last link */
+}
+
+.custom-navbar h1, .custom-navbar h4 {
+  font-family: 'Georgia', serif; /* Use a serif font for headers */
+}
+
+.custom-navbar .highlight {
+  color: #dc3545; /* Highlight text in red */
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+
 
 @media (max-width: 768px) {
   .navbar {

@@ -6,7 +6,6 @@ import FactSheet from './files/Factsheet IITPKD.pdf'
 import Flyer from './files/Flyer_IITPKD.pdf'
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
-
 const Navbar = () => {
 
   const [isMobileMenuOpenPrimary, setIsMobileMenuOpenPrimary] = useState(false);
@@ -234,14 +233,61 @@ const Navbar = () => {
           <Offcanvas.Title> International Relations IIT PALAKKAD </Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          <div className="">
+          <div className="custom-navbar">
           <Link to="/">Home</Link>
-          <Link to="/about">About Us</Link>
-          <Link to="/life">Life @ IITPKD</Link>
-          <Link to="/students"> Our Foreign students </Link>
-          <a href="https://iitpkd.ac.in/" target="blank">IIT PKD main</a>
-          <Link to="/"> Visit Template </Link>
-          <Link to="/"> Downloads </Link>
+      <Link to="/about">About Us</Link>
+      <Link to="/life">Life @ IITPKD</Link>
+      <Link to="/students">Our Foreign Students</Link>
+      <a href="https://iitpkd.ac.in/" target="_blank" rel="noopener noreferrer"> IIT PKD Main </a>
+      <Link to="/">Visit Template</Link>
+      
+            <h1> DOWNLOADS </h1>
+            <a href="https://drive.google.com/file/d/1RUlAOd51KJPSR_uIU0GAcdLI-yba61Fn/view">IIT PKD PPT </a>
+            <a href="https://drive.google.com/file/d/1v2t5ba3AaKej8jR6ACvaBczIUzs-5tT7/view"> MoU Template </a>
+            <a href={FactSheet}>Factsheet</a>
+            <a href="https://drive.google.com/file/d/1PjjlqNi9IIXaZodSfBf54mMGJOpgh34Y/view"> International Student Guide</a>
+            <a href={Flyer}>IIT_PKD Flyer</a>
+
+            <h1> INTERNATIOANAL ADMISSION</h1>
+            <Link to="/applications">Sponsored Applications for Masters and PhD programs</Link>
+            <Link to="/sii">Study in India (SII)</Link>
+            <Link to="/asean">Association of Southeast Asian Nations (ASEAN)</Link>
+            <Link to="/iccr">Indian Council for Cultural Relations (ICCR)</Link>
+            <Link to="/embassy">Embassy</Link>
+
+            <h1> INTERNATIONAL MOBILITY </h1>
+
+            <h4> INTERNATIONAL STUDENTS </h4>
+            <Link to="/semexchange">Semester Exchange</Link>
+            <Link to="/researchwork">Research Work/Thesis</Link>
+            <Link to="/projectwork">Project Work/Field Work</Link>
+            <Link to="/researchinternship">Research Internship</Link>
+          
+            <h4> INTERNATIONAL FACULTY </h4>
+            <Link to="/sparc">SPARC</Link>
+            <Link to="/vajra">VAJRA</Link>
+            <Link to="/gian">GIAN</Link>
+        
+            <h4> IITPKD STUDENTS </h4>
+            <Link to="/scholarships">Scholarships</Link>
+            <Link to="/exchangeprograms">Exchange Programs</Link>
+            <Link to="/researchprograms">Research Programs</Link>
+            <Link to="/opportunitiesabroad"> Opportunities Abroad for Students </Link>
+          
+            <h4> <Link to="/faculty">IIT PKD Faculty</Link> </h4>
+
+            <h1> MoUs</h1>
+      <Link to="/MoUs#partners">Our  Partners and Programs</Link>
+      <Link to="/MoUs#doctoral">Joint Doctoral Programs</Link>
+      <Link to="/MoUs#supervision">Joint Supervison Programs </Link>
+      <Link to="/MoUs#consortium">Consortium Agreements (University Network)</Link>  
+
+            <h1> VISA </h1>
+      <Link to="/VISAtypes">VISA Types</Link>
+      <Link to="/VISAprovision">VISA Provisions/Policies</Link>
+      <Link to="/VISAextensions">VISA Extensions</Link>    
+
+      <Link to="/contact">Contact Us</Link>
           </div>
         </Offcanvas.Body>
       </Offcanvas>
