@@ -234,60 +234,60 @@ const Navbar = () => {
         </Offcanvas.Header>
         <Offcanvas.Body>
           <div className="custom-navbar">
-          <Link to="/">Home</Link>
-      <Link to="/about">About Us</Link>
-      <Link to="/life">Life @ IITPKD</Link>
-      <Link to="/students">Our Foreign Students</Link>
+          <Link to="/"  onClick={handleClose} >Home</Link>
+      <Link to="/about" onClick={handleClose} >About Us</Link>
+      <Link to="/life" onClick={handleClose} >Life @ IITPKD</Link>
+      <Link to="/students" onClick={handleClose} >Our Foreign Students</Link>
       <a href="https://iitpkd.ac.in/" target="_blank" rel="noopener noreferrer"> IIT PKD Main </a>
-      <Link to="/">Visit Template</Link>
+      <Link to="/" onClick={handleClose} >Visit Template</Link>
       
             <h1> DOWNLOADS </h1>
-            <a href="https://drive.google.com/file/d/1RUlAOd51KJPSR_uIU0GAcdLI-yba61Fn/view">IIT PKD PPT </a>
-            <a href="https://drive.google.com/file/d/1v2t5ba3AaKej8jR6ACvaBczIUzs-5tT7/view"> MoU Template </a>
-            <a href={FactSheet}>Factsheet</a>
-            <a href="https://drive.google.com/file/d/1PjjlqNi9IIXaZodSfBf54mMGJOpgh34Y/view"> International Student Guide</a>
-            <a href={Flyer}>IIT_PKD Flyer</a>
+            <a target="_blank" href="https://drive.google.com/file/d/1RUlAOd51KJPSR_uIU0GAcdLI-yba61Fn/view">IIT PKD PPT </a>
+            <a target="_blank" href="https://drive.google.com/file/d/1v2t5ba3AaKej8jR6ACvaBczIUzs-5tT7/view"> MoU Template </a>
+            <a target="_blank" href={FactSheet}>Factsheet</a>
+            <a target="_blank" href="https://drive.google.com/file/d/1PjjlqNi9IIXaZodSfBf54mMGJOpgh34Y/view"> International Student Guide</a>
+            <a target="_blank" href={Flyer}>IIT_PKD Flyer</a>
 
             <h1> INTERNATIOANAL ADMISSION</h1>
-            <Link to="/applications">Sponsored Applications for Masters and PhD programs</Link>
-            <Link to="/sii">Study in India (SII)</Link>
-            <Link to="/asean">Association of Southeast Asian Nations (ASEAN)</Link>
-            <Link to="/iccr">Indian Council for Cultural Relations (ICCR)</Link>
-            <Link to="/embassy">Embassy</Link>
+            <Link to="/applications" onClick={handleClose} >Sponsored Applications for Masters and PhD programs</Link>
+            <Link to="/sii" onClick={handleClose} >Study in India (SII)</Link>
+            <Link to="/asean" onClick={handleClose} >Association of Southeast Asian Nations (ASEAN)</Link>
+            <Link to="/iccr" onClick={handleClose} >Indian Council for Cultural Relations (ICCR)</Link>
+            <Link to="/embassy" onClick={handleClose} >Embassy</Link>
 
             <h1> INTERNATIONAL MOBILITY </h1>
 
             <h4> INTERNATIONAL STUDENTS </h4>
-            <Link to="/semexchange">Semester Exchange</Link>
-            <Link to="/researchwork">Research Work/Thesis</Link>
-            <Link to="/projectwork">Project Work/Field Work</Link>
-            <Link to="/researchinternship">Research Internship</Link>
+            <Link to="/semexchange" onClick={handleClose} >Semester Exchange</Link>
+            <Link to="/researchwork" onClick={handleClose} >Research Work/Thesis</Link>
+            <Link to="/projectwork" onClick={handleClose} >Project Work/Field Work</Link>
+            <Link to="/researchinternship" onClick={handleClose} >Research Internship</Link>
           
             <h4> INTERNATIONAL FACULTY </h4>
-            <Link to="/sparc">SPARC</Link>
-            <Link to="/vajra">VAJRA</Link>
-            <Link to="/gian">GIAN</Link>
+            <Link to="/sparc" onClick={handleClose} >SPARC</Link>
+            <Link to="/vajra" onClick={handleClose} >VAJRA</Link>
+            <Link to="/gian" onClick={handleClose} >GIAN</Link>
         
             <h4> IITPKD STUDENTS </h4>
-            <Link to="/scholarships">Scholarships</Link>
-            <Link to="/exchangeprograms">Exchange Programs</Link>
-            <Link to="/researchprograms">Research Programs</Link>
-            <Link to="/opportunitiesabroad"> Opportunities Abroad for Students </Link>
+            <Link to="/scholarships" onClick={handleClose} >Scholarships</Link>
+            <Link to="/exchangeprograms" onClick={handleClose} >Exchange Programs</Link>
+            <Link to="/researchprograms" onClick={handleClose} >Research Programs</Link>
+            <Link to="/opportunitiesabroad" onClick={handleClose} > Opportunities Abroad for Students </Link>
           
             <h4> <Link to="/faculty">IIT PKD Faculty</Link> </h4>
 
             <h1> MoUs</h1>
-      <Link to="/MoUs#partners">Our  Partners and Programs</Link>
-      <Link to="/MoUs#doctoral">Joint Doctoral Programs</Link>
-      <Link to="/MoUs#supervision">Joint Supervison Programs </Link>
-      <Link to="/MoUs#consortium">Consortium Agreements (University Network)</Link>  
+      <Link to="/MoUs#partners" onClick={handleClose} >Our  Partners and Programs</Link>
+      <Link to="/MoUs#doctoral" onClick={handleClose} >Joint Doctoral Programs</Link>
+      <Link to="/MoUs#supervision" onClick={handleClose} >Joint Supervison Programs </Link>
+      <Link to="/MoUs#consortium" onClick={handleClose} >Consortium Agreements (University Network)</Link>  
 
             <h1> VISA </h1>
-      <Link to="/VISAtypes">VISA Types</Link>
-      <Link to="/VISAprovision">VISA Provisions/Policies</Link>
-      <Link to="/VISAextensions">VISA Extensions</Link>    
+      <Link to="/VISAtypes" onClick={handleClose} >VISA Types</Link>
+      <Link to="/VISAprovision" onClick={handleClose} >VISA Provisions/Policies</Link>
+      <Link to="/VISAextensions" onClick={handleClose} >VISA Extensions</Link>    
 
-      <Link to="/contact">Contact Us</Link>
+      <Link to="/contact" onClick={handleClose} >Contact Us</Link>
           </div>
         </Offcanvas.Body>
       </Offcanvas>
