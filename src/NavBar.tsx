@@ -36,25 +36,26 @@ const Navbar = () => {
     <>
       {/* Main Navbar */}
       <nav className="navbar">
-        <a
-          className="navbar-brand"
-          href="/"
-          
-          rel="noopener noreferrer"
-        >
-          <img
-            src={image}
-            alt="IAR Logo"
-            height="48"
-          />
-          
-        </a>
+      <div className="d-flex flex-row w-100">
+        <div className=" w-10">
+          <a
+            className="navbar-brand"
+            href="/"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={image}
+              alt="IAR Logo"
+            />
+            
+          </a>
+        </div>
         <div
           className={`navbar-links ${
             isMobileMenuOpenPrimary ? "active" : ""
-          }`}
-          onClick={() => setIsMobileMenuOpenPrimary(false)} // Close on click
-        >
+            } w-90`}
+            onClick={() => setIsMobileMenuOpenPrimary(false)} // Close on click
+            >
 
         <div className="search-container">
           <Link to="/">Home</Link>
@@ -66,6 +67,7 @@ const Navbar = () => {
 
         <div className="search-container">
          <h4>{currentTime.toLocaleString()} IST</h4>
+        </div>
         </div>
       </div>
       <button className="menu-toggle" onClick={handleShow}>
@@ -90,7 +92,7 @@ const Navbar = () => {
             onMouseEnter={() => handleDropdown("visits")}
             onMouseLeave={() => handleDropdown(null)}
           >
-            <a href="/" className="nav-lk">
+            <a href="#" className="nav-lk">
               VISITS
             </a>
             {activeDropdown === "visits" && (
@@ -105,7 +107,7 @@ const Navbar = () => {
             onMouseEnter={() => handleDropdown("download")}
             onMouseLeave={() => handleDropdown(null)}
           >
-            <a href="/" className="nav-lk">
+            <a href="#" className="nav-lk">
               Downloads
             </a>
             {activeDropdown === "download" && (
@@ -123,7 +125,7 @@ const Navbar = () => {
             onMouseEnter={() => handleDropdown("admission")}
             onMouseLeave={() => handleDropdown(null)}
           >
-            <a href="/" className="nav-lk">
+            <a href="#" className="nav-lk">
               International Admission
             </a>
             {activeDropdown === "admission" && (
@@ -159,7 +161,7 @@ const Navbar = () => {
       </div>
 
       <div className="dropdown-item">
-        <Link to="/">
+        <Link to="#">
           International Faculty <i className="fas fa-arrow-right"></i>
         </Link>
         <div className="dropdown-submenu">
@@ -170,7 +172,7 @@ const Navbar = () => {
       </div>
 
       <div className="dropdown-item">
-        <Link to="/">
+        <Link to="#">
           IIT PKD Students <i className="fas fa-arrow-right"></i>
         </Link>
         <div className="dropdown-submenu">
@@ -212,7 +214,7 @@ const Navbar = () => {
             onMouseEnter={() => handleDropdown("visa")}
             onMouseLeave={() => handleDropdown(null)}
           >
-            <a href="/" className="nav-lk">
+            <a href="#" className="nav-lk">
               Visa and Immigration
             </a>
             {activeDropdown === "visa" && (
