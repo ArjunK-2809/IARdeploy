@@ -4,9 +4,7 @@ function EXCHANGEPROGRAM(){
     return (
               <div className="page">
                 <div className="subpage">
-                  <nav className="bg-gray-100 p-2 mb-6">
-                    <a href="/" className="text-gray-600 hover:text-gray-800">Home</a> /
-                  </nav>
+                  
         
                   <div className="content-wrapper max-w-4xl mx-auto">
                     <h1 className="text-3xl font-bold text-[#E94C26] mb-8">Exchange Programs</h1><br/><br/>

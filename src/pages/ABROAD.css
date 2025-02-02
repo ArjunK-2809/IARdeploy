@@ -1,40 +1,50 @@
-/* table.css */
-.breadcrumb {
-    margin-bottom: 20px;
-  }
-  
-  .breadcrumb a {
-    color: #666;
-    text-decoration: none;
-  }
-  
+/* General styling for better responsiveness */
+.content-wrapper {
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 10px;
+}
+
+/* Table container to allow horizontal scrolling */
+.opportunities-table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow-x: auto;
+  display: block; /* Allows scrolling */
+  white-space: nowrap; /* Prevents text from overflowing */
+}
+
+/* Table headers and data */
+.opportunities-table th,
+.opportunities-table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+  min-width: 150px; /* Ensures columns are not too narrow */
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 768px) {
   .opportunities-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
   }
-  
+
   .opportunities-table th,
   .opportunities-table td {
-    border-bottom: 1px solid #ddd;
-    padding: 15px;
-    text-align: left;
+    font-size: 14px;
+    padding: 8px;
   }
-  
-  .opportunities-table th {
-    border-top: 1px solid #ddd;
-    font-weight: 600;
-  }
-  
-  .university-name {
-    color: #F5A623;
-  }
-  
-  .university-link {
-    color: #F5A623;
-    text-decoration: none;
-  }
-  
-  .university-link:hover {
-    text-decoration: underline;
-  }
+}
+
+/* Hyperlink styling */
+.university-link {
+  color: #F5A623;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.university-link:hover {
+  text-decoration: underline;
+}

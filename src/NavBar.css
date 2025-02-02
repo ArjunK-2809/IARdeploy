@@ -248,7 +248,7 @@ white-space: nowrap;
 }
 
 .custom-navbar a {
-  color: #007bff; /* Blue text */
+  color: #ff9d00; /* Blue text */
   text-decoration: none;
   margin-right: 15px;
   font-size: 1rem;
@@ -257,7 +257,7 @@ white-space: nowrap;
 }
 
 .custom-navbar a:hover {
-  color: #0056b3; /* Darker blue on hover */
+  color: #b36500; /* Darker blue on hover */
   text-decoration: underline;
 }
 
@@ -267,7 +267,7 @@ h1 {
   color: #343a40; /* Dark gray */
   margin-top: 20px;
   margin-bottom: 10px;
-  border-bottom: 2px solid #007bff; /* Underline with blue */
+  border-bottom: 2px solid #ff9500; /* Underline with blue */
   padding-bottom: 5px;
 }
 

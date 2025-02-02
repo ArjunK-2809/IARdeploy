@@ -7,10 +7,7 @@ function OpportunitiesPage() {
       <div className="subpage content-wrapper">
         <h1>Opportunities Abroad for students</h1>
         
-        <div className="breadcrumb">
-          <a href="/">Home</a> /
-        </div>
-
+       
         <h2>Exchange Program/Internships - Information and Deadlines</h2>
         
         <table className="opportunities-table">

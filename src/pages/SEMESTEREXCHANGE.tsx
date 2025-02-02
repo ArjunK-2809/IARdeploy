@@ -1,5 +1,6 @@
 import './common.css'
 import './table.css' 
+import './SEMESTEREXCHANGE.css'
 import YouTube from 'react-youtube';
 
 function SEMESTEREXCHANGE() {
