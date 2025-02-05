@@ -2,7 +2,7 @@ import './common.css'
 import Srujana from "../assets/club/srujana jasmin.jpeg"
 import likitha from "../assets/club/likitha.jpeg"
 import Harika from "../assets/club/harika.jpeg"
-import Nishant from "../assets/club/nishant.jpeg"
+import Vaibhav from "../assets/club/Vaibhav.jpeg"
 import { Link } from 'react-router-dom';
 
 function AboutUs(){
@@ -80,7 +80,7 @@ function AboutUs(){
           </div>
         </div> <div className="contact-card">
           <div className="card-image">
-            <img src={Nishant} alt="Dr. Dinesh Setti" />
+            <img src={Vaibhav} alt="Dr. Dinesh Setti" />
           </div>
           <div className="card-content">
             <h3>Vaibhav Mittapally</h3>
