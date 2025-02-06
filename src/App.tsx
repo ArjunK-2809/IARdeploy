@@ -35,6 +35,7 @@ import RESEARCHPROGRAM from "./pages/RESEARCHPROGRAM";
 import OPPORTUNITIESABROAD from "./pages/ABROAD";
 import FACULTY from "./pages/Faculty";
 import ClubMembers from "./pages/TechMembers";
+import IRMembers from "./pages/IRMembers";
 import ManagementMembers from "./pages/ManagementMembers";
 
 function App() {
@@ -72,7 +73,8 @@ function App() {
             <Route path="/VISAprovision" element={<VISAprovision />} />
             <Route path="/VISAextensions" element={<VISAextensions />} />
             <Route path="/TechClubMembers" element={<ClubMembers />} />
-            <Route path="/ManagementClubMembers" element={<ManagementMembers />} />
+            <Route path="/IRMembers" element={<IRMembers />} />
+            <Route path="/ManagementMembers" element={<ManagementMembers />} />
           </Routes>
         </div>
         <Footer />

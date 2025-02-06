@@ -104,7 +104,14 @@ function AboutUs(){
                   
               </div>
               <div className="techmembers">
-                  <Link to="/ManagementClubMembers" >
+                  <Link to="/IRMembers" >
+                      <p className="tech">Meet The IR Team</p>
+                  </Link>
+                  
+              </div>
+
+              <div className="techmembers">
+                  <Link to="/ManagementMembers" >
                       <p className="tech">Meet The Management Team</p>
                   </Link>
                   
