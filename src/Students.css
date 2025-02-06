@@ -46,7 +46,8 @@
 
 .country_text, .branch_text, .program_text {
   font-size: 1.2em;
-  color: #faab1a;
+  font-weight: bold;
+  color: #fa1a1a;
   background-color: #ffffff;
   padding: 10px;
   text-align: left;
@@ -73,6 +74,17 @@
   margin: 10px 0;
   border-radius: 2px;
 }
+
+.label {
+  color: black; /* Black color for "Country:", "Branch:", "Program:" */
+  font-weight: bold;
+}
+
+.value {
+  color: rgb(255, 85, 0); /* Different color for values */
+  font-weight: normal;
+}
+
 
 @media (max-width: 768px) {
   .aboutusphoto_container {

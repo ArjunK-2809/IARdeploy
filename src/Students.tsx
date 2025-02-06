@@ -69,9 +69,19 @@ function Students() {
                 <div className="decorative-line"></div>
                 <div className="home_heading">{item.heading}</div>
                 <div className="decorative-line"></div>
-              <div className="country_text">Country: {item.country}</div>
-              <div className="branch_text">Branch: {item.branch}</div>
-              <div className="program_text">Program: {item.program}</div>
+                <div className="country_text">
+                  <span className="label">Country: </span>
+                  <span className="value">{item.country}</span>
+                </div>
+                <div className="branch_text">
+                  <span className="label">Branch: </span>
+                  <span className="value">{item.branch}</span>
+                </div>
+                <div className="program_text">
+                  <span className="label">Program: </span>
+                  <span className="value">{item.program}</span>
+                </div>
+
               </div>
             </div>
           </div>
