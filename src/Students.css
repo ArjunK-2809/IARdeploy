@@ -1,45 +1,94 @@
-.students-carousel .carousel {
-    max-width: 800px;
-    margin: 0 auto;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+/* General container */
+.container {
+  width: 100%;
+  height: 105%;
+  text-align: center;
+}
+
+/* About us section */
+.aboutus {
+  width: 100%;
+  padding: 0 2%;
+  box-sizing: border-box;
+}
+
+.aboutus_row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.aboutusphoto_container {
+  display: flex;
+  align-items: flex-start;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  padding: 1%;
+  margin: 20px 0;
+  flex: 1;
+  min-width: 45%; /* Ensure two fit in a row */
+}
+
+.image_container {
+  margin-right: 20px;
+}
+
+.image_container img {
+  width: 150px;
+  border-radius: 10px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.country_text, .branch_text, .program_text {
+  font-size: 1.2em;
+  color: #faab1a;
+  background-color: #ffffff;
+  padding: 10px;
+  text-align: left;
+}
+
+.dir_common {
+  padding: 15px;
+  text-align: left;
+}
+
+.home_heading {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #fa821a;
+  background-color: #ffffff;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.decorative-line {
+  width: 100%;
+  height: 2px;
+  background-color: #dfdada;
+  margin: 10px 0;
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  .aboutusphoto_container {
+      flex-direction: column;
+      align-items: center;
+      min-width: 100%;
   }
-  
-  .students-carousel .carousel img {
-    object-fit: cover;
-    height: 400px;
+  .aboutus_row {
+      flex-direction: column;
+      align-items: center;
   }
-  
-  .students-carousel .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 10px 20px;
-    border-radius: 5px;
-    bottom: 20px;
+  .image_container {
+      margin-right: 0;
+      margin-bottom: 10px;
   }
-  
-  .students-carousel .carousel-caption h5,
-  .students-carousel .carousel-caption p {
-    color: #fff;
-    margin: 0;
-    font-weight: bold;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  .text-container {
+      text-align: center;
   }
-  
-  .students-carousel .carousel-indicators [data-bs-target] {
-    background-color: #007bff;
-    border: none;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-  }
-  
-  .students-carousel .carousel-indicators [data-bs-target].active {
-    background-color: #0056b3;
-  }
-  
-  .students-carousel .carousel-control-prev-icon,
-  .students-carousel .carousel-control-next-icon {
-    filter: invert(100%);
-  }
-  
+}

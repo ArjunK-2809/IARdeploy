@@ -1,43 +1,88 @@
-import Carousel from 'react-bootstrap/Carousel';
-import image12 from './assets/slide12.jpg';
+// Import images
 import image13 from './assets/slide13.jpg';
 import image14 from './assets/slide14.jpg';
 import image15 from './assets/slide15.jpg';
+import image12 from './assets/slide12.jpg';
+import image16 from './assets/slide16.jpg';
+import image17 from './assets/slide17.jpg';
 import './Students.css'; // Import scoped CSS file
 
 function Students() {
+
+  const message = [
+    {
+      heading: "Tatenda Darlington Nhika",
+      country: "Zimbabwe",
+      branch: "Electrical engineering",
+      program: "MTech in Power electronics and power systems",
+      image: image13,
+    },
+    {
+      heading: "Ropafadzo Siziba ",
+      country: "Zimbabwe",
+      branch: "Data Science",
+      program: "MTech in Data Science",
+      image: image14,
+    },
+    {
+      heading: "Samuel Faindani",
+      country: "Zimbabwe",
+      branch: "Computer Science and engineering",
+      program: "Mtech in Computer Science and Mathematics",
+      image: image15,
+    },
+    {
+      heading: "Etana",
+      country: "Zimbabwe",
+      branch: "",
+      program: "",
+      image: image12,
+    },
+    {
+      heading: "Kritagya Koirala",
+      country: "Nepal",
+      branch: "Civil engineering",
+      program: "B Tech in Civil Engineering",
+      image: image16,
+    },
+    {
+      heading: "Dikshant Bikram Thapa",
+      country: "Nepal",
+      branch: "Computer Science and engineering",
+      program: "Btech CSE",
+      image: image17,
+    },
+    
+  ];
+
+  const messagemap = [];
+  for (let i = 0; i < message.length; i += 2) {
+    messagemap.push(
+      <div className="aboutus_row">
+        {message.slice(i, i + 2).map((item, index) => (
+          <div className="aboutusphoto_container" key={index}>
+            <div className="image_container">
+              <img src={item.image} alt="Profile" width={300} />
+            </div>
+            <div className="text-container">
+              <div className="dir_common">
+                <div className="decorative-line"></div>
+                <div className="home_heading">{item.heading}</div>
+                <div className="decorative-line"></div>
+              <div className="country_text">Country: {item.country}</div>
+              <div className="branch_text">Branch: {item.branch}</div>
+              <div className="program_text">Program: {item.program}</div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    );
+  }
+
   return (
-    <div className="students-carousel"> {/* Unique class for scoping */}
-      <Carousel>
-        <Carousel.Item>
-          <img className="d-block w-100" src={image12} alt="First slide" />
-          <Carousel.Caption>
-            <h5>Etana</h5>
-            <p></p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img className="d-block w-100" src={image13} alt="Second slide" />
-          <Carousel.Caption>
-            <h5>Tatenda</h5>
-            <p> </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img className="d-block w-100" src={image14} alt="Third slide" />
-          <Carousel.Caption>
-            <h5>Ropa</h5>
-            <p></p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img className="d-block w-100" src={image15} alt="Fourth slide" />
-          <Carousel.Caption>
-            <h5>Sameul</h5>
-            <p></p>
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
+    <div>
+      <div className="aboutus">{messagemap}</div>
     </div>
   );
 }
