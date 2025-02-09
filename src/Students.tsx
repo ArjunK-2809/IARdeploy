@@ -5,7 +5,8 @@ import image15 from './assets/slide15.jpg';
 import image12 from './assets/slide12.jpg';
 import image16 from './assets/slide16.jpg';
 import image17 from './assets/slide17.jpg';
-import './Students.css'; // Import scoped CSS file
+import image18 from './assets/slide18.jpg';
+import './Students.css'; 
 
 function Students() {
 
@@ -51,6 +52,13 @@ function Students() {
       branch: "Computer Science and engineering",
       program: "Btech CSE",
       image: image17,
+    },
+    {
+      heading: "Sushan Adhikari",
+      country: "Nepal",
+      branch: "Computer Science and engineering",
+      program: "Btech CSE",
+      image: image18,
     },
     
   ];

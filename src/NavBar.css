@@ -49,7 +49,7 @@ border-radius: 2rem;
 }
 
 
-.navbar .search-container {
+.navbar .primary{
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -234,7 +234,7 @@ white-space: nowrap;
   text-decoration: none;
 }
 
-.temp {
+.secondary {
   display: flex;
   flex-direction: row;
 }
@@ -316,7 +316,7 @@ h1 {
       padding: 10px 0;
   }
 
-  .navbar .search-container {
+  .navbar .primary{
   margin-top: 10px;
   text-align: center;
   }
@@ -352,10 +352,10 @@ h1 {
 
   
 
-  /* Make the search bar responsive */
-  .navbar .search-container {
-  width: 100%; /* Ensure it doesn't exceed the screen width */
-  justify-content: center; /* Center the search bar */
+  
+  .navbar .primary {
+  width: 100%; 
+  justify-content: center; 
   margin-top: 10px;
   }
 
@@ -389,12 +389,12 @@ h1 {
   flex-direction: column;
   }
 
-  .search-container{
+  .primary{
   display: flex;
-  flex-direction: column; /* Stack items vertically */
+  flex-direction: column; 
   }
 
-  .temp {
+  .secondary{
     flex-direction: column;
   }
 

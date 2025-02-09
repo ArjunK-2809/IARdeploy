@@ -76,12 +76,12 @@
 }
 
 .label {
-  color: black; /* Black color for "Country:", "Branch:", "Program:" */
+  color: black; 
   font-weight: bold;
 }
 
 .value {
-  color: rgb(255, 85, 0); /* Different color for values */
+  color: rgb(255, 85, 0); 
   font-weight: normal;
 }
 

@@ -57,7 +57,7 @@ const Navbar = () => {
             onClick={() => setIsMobileMenuOpenPrimary(false)} // Close on click
             >
 
-        <div className="search-container">
+        <div className="primary">
           <Link to="/">Home</Link>
           <Link to="/about">About Us</Link>
           <Link to="/life">Life @ IITPKD</Link>
@@ -65,7 +65,7 @@ const Navbar = () => {
           <a href="https://iitpkd.ac.in/" target="blank">IIT PKD main</a>
         </div>
 
-        <div className="search-container">
+        <div className="primary">
          <h4>{currentTime.toLocaleString()} IST</h4>
         </div>
         </div>
@@ -86,7 +86,7 @@ const Navbar = () => {
           onClick={() => setIsMobileMenuOpenSecondary(false)}
         >
           
-        <div className="temp">
+        <div className="secondary">
           <div
             className="dropdown"
             onMouseEnter={() => handleDropdown("visits")}
