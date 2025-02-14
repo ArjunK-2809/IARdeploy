@@ -61,7 +61,7 @@ const Navbar = () => {
           <Link to="/">Home</Link>
           <Link to="/about">About Us</Link>
           <Link to="/life">Life @ IITPKD</Link>
-          <Link to="/students"> Our Foreign students </Link>
+          <Link to="/students"> International student testimonials </Link>
           <a href="https://iitpkd.ac.in/" target="blank">IIT PKD main</a>
         </div>
 
@@ -239,7 +239,7 @@ const Navbar = () => {
           <Link to="/"  onClick={handleClose} >Home</Link>
       <Link to="/about" onClick={handleClose} >About Us</Link>
       <Link to="/life" onClick={handleClose} >Life @ IITPKD</Link>
-      <Link to="/students" onClick={handleClose} >Our Foreign Students</Link>
+      <Link to="/students" onClick={handleClose} > International student testimonials</Link>
       <a href="https://iitpkd.ac.in/" target="_blank" rel="noopener noreferrer"> IIT PKD Main </a>
       <Link to="/" onClick={handleClose} >Visit Template</Link>
       

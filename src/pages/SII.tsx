@@ -1,50 +1,15 @@
 import './common.css'
 import './SII.css'
-import testvideo from '../assets/video.mp4'
-import { useRef, useState,useEffect } from "react";
 
 function SII(){
-    const videoRef = useRef(null);
-    const [isFullscreen, setIsFullscreen] = useState(false);
-     
-    const handleFullscreenChange = () => {
-      setIsFullscreen(!!document.fullscreenElement);
-    };
-  
-    useEffect(() => {
-      document.addEventListener('fullscreenchange', handleFullscreenChange);
-      document.addEventListener('webkitfullscreenchange', handleFullscreenChange);
-      document.addEventListener('mozfullscreenchange', handleFullscreenChange);
-      document.addEventListener('MSFullscreenChange', handleFullscreenChange);
-  
-      return () => {
-        document.removeEventListener('fullscreenchange', handleFullscreenChange);
-        document.removeEventListener('webkitfullscreenchange', handleFullscreenChange);
-        document.removeEventListener('mozfullscreenchange', handleFullscreenChange);
-        document.removeEventListener('MSFullscreenChange', handleFullscreenChange);
-      };
-    }, []);
+    
 
     return (
         <div className='page'>
         <div className="subpage">
         <h1> Study in India (SII) </h1>
 
-        <div className="video">
-          <div className="video-card">
-      <div className="video-thumbnail">
-        <video ref={videoRef} width="300" height="180" controls>
-          <source src={testvideo} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div className="video-info">
-        <h4 className="video-title"> Queen University </h4>
-        <p className="video-stats"> Germany </p>
-      </div>
-      {isFullscreen && <button className="exit-fullscreen-btn" onClick={() => document.exitFullscreen()}>Exit Fullscreen</button>}
-    </div>
-    </div>
+        
         <div className="table-container" >
         <table className="centered-table">
                 <thead>

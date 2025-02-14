@@ -7,8 +7,33 @@ import image16 from './assets/slide16.jpg';
 import image17 from './assets/slide17.jpg';
 import image18 from './assets/slide18.jpg';
 import './Students.css'; 
+import { useRef, useState,useEffect } from "react";
+import testvideo from './assets/video.mp4'
+
+
 
 function Students() {
+
+  const videoRef = useRef(null);
+    const [isFullscreen, setIsFullscreen] = useState(false);
+     
+    const handleFullscreenChange = () => {
+      setIsFullscreen(!!document.fullscreenElement);
+    };
+  
+    useEffect(() => {
+      document.addEventListener('fullscreenchange', handleFullscreenChange);
+      document.addEventListener('webkitfullscreenchange', handleFullscreenChange);
+      document.addEventListener('mozfullscreenchange', handleFullscreenChange);
+      document.addEventListener('MSFullscreenChange', handleFullscreenChange);
+  
+      return () => {
+        document.removeEventListener('fullscreenchange', handleFullscreenChange);
+        document.removeEventListener('webkitfullscreenchange', handleFullscreenChange);
+        document.removeEventListener('mozfullscreenchange', handleFullscreenChange);
+        document.removeEventListener('MSFullscreenChange', handleFullscreenChange);
+      };
+    }, []);
 
   const message = [
     {
@@ -101,6 +126,23 @@ function Students() {
   return (
     <div>
       <div className="aboutus">{messagemap}</div>
+
+      <div className="video">
+          <div className="video-card">
+      <div className="video-thumbnail">
+        <video ref={videoRef} width="300" height="180" controls>
+          <source src={testvideo} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div className="video-info">
+        <h4 className="video-title"> Queen University </h4>
+        <p className="video-stats"> Germany </p>
+      </div>
+      {isFullscreen && <button className="exit-fullscreen-btn" onClick={() => document.exitFullscreen()}>Exit Fullscreen</button>}
+    </div>
+    </div>
+
     </div>
   );
 }
