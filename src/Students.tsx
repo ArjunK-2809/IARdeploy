@@ -13,28 +13,27 @@ import testvideo from './assets/video.mp4'
 
 
 function Students() {
-
   const videoRef = useRef(null);
-    const [isFullscreen, setIsFullscreen] = useState(false);
-     
-    const handleFullscreenChange = () => {
-      setIsFullscreen(!!document.fullscreenElement);
-    };
-  
-    useEffect(() => {
-      document.addEventListener('fullscreenchange', handleFullscreenChange);
-      document.addEventListener('webkitfullscreenchange', handleFullscreenChange);
-      document.addEventListener('mozfullscreenchange', handleFullscreenChange);
-      document.addEventListener('MSFullscreenChange', handleFullscreenChange);
-  
-      return () => {
-        document.removeEventListener('fullscreenchange', handleFullscreenChange);
-        document.removeEventListener('webkitfullscreenchange', handleFullscreenChange);
-        document.removeEventListener('mozfullscreenchange', handleFullscreenChange);
-        document.removeEventListener('MSFullscreenChange', handleFullscreenChange);
-      };
-    }, []);
+  const [isFullscreen, setIsFullscreen] = useState(false);
+   
+  const handleFullscreenChange = () => {
+    setIsFullscreen(!!document.fullscreenElement);
+  };
 
+  useEffect(() => {
+    document.addEventListener('fullscreenchange', handleFullscreenChange);
+    document.addEventListener('webkitfullscreenchange', handleFullscreenChange);
+    document.addEventListener('mozfullscreenchange', handleFullscreenChange);
+    document.addEventListener('MSFullscreenChange', handleFullscreenChange);
+
+    return () => {
+      document.removeEventListener('fullscreenchange', handleFullscreenChange);
+      document.removeEventListener('webkitfullscreenchange', handleFullscreenChange);
+      document.removeEventListener('mozfullscreenchange', handleFullscreenChange);
+      document.removeEventListener('MSFullscreenChange', handleFullscreenChange);
+    };
+  }, []);
+  
   const message = [
     {
       heading: "Tatenda Darlington Nhika",
@@ -51,7 +50,7 @@ function Students() {
       image: image14,
     },
     {
-      heading: "Samuel Faindani",
+      heading: "Samuel Faindani",
       country: "Zimbabwe",
       branch: "Computer Science and engineering",
       program: "Mtech in Computer Science and Mathematics",
@@ -79,7 +78,7 @@ function Students() {
       image: image17,
     },
     {
-      heading: "Sushan Adhikari",
+      heading: "Dikshant Bikram Thapa",
       country: "Nepal",
       branch: "Computer Science and engineering",
       program: "Btech CSE",
@@ -89,10 +88,10 @@ function Students() {
   ];
 
   const messagemap = [];
-  for (let i = 0; i < message.length; i += 2) {
+    
     messagemap.push(
       <div className="aboutus_row">
-        {message.slice(i, i + 2).map((item, index) => (
+        {message.map((item, index) => (
           <div className="aboutusphoto_container" key={index}>
             <div className="image_container">
               <img src={item.image} alt="Profile" width={300} />
@@ -121,7 +120,6 @@ function Students() {
         ))}
       </div>
     );
-  }
 
   return (
     <div>
