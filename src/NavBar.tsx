@@ -11,7 +11,7 @@ const Navbar = () => {
   const [isMobileMenuOpenPrimary, setIsMobileMenuOpenPrimary] = useState(false);
   const [isMobileMenuOpenSecondary, setIsMobileMenuOpenSecondary] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
-  const [currentTime, setCurrentTime] = useState(new Date());
+  // const [currentTime, setCurrentTime] = useState(new Date());
   
   const [show, setShow] = useState(false);
 
@@ -20,7 +20,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentTime(new Date());
+      // setCurrentTime(new Date());
     }, 1000);
 
     return () => clearInterval(timer);
@@ -65,9 +65,7 @@ const Navbar = () => {
           <a href="https://iitpkd.ac.in/" target="blank">IIT PKD main</a>
         </div>
 
-        <div className="primary">
-         <h4>{currentTime.toLocaleString()} IST</h4>
-        </div>
+        
         </div>
       </div>
       <button className="menu-toggle" onClick={handleShow}>
@@ -150,7 +148,7 @@ const Navbar = () => {
     <div className="dropdown-menu">
       <div className="dropdown-item">
         <Link to="/">
-          International Students <i className="fas fa-arrow-right"></i>
+          International Students &nbsp; <span className="arrow text-end">--›</span>
         </Link>
         <div className="dropdown-submenu">
           <Link to="/semexchange">Semester Exchange</Link>
@@ -162,7 +160,7 @@ const Navbar = () => {
 
       <div className="dropdown-item">
         <Link to="#">
-          International Faculty <i className="fas fa-arrow-right"></i>
+          International Faculty &nbsp;<div className="arrow text-end">--›</div>
         </Link>
         <div className="dropdown-submenu">
           <Link to="/sparc">SPARC</Link>
@@ -173,7 +171,7 @@ const Navbar = () => {
 
       <div className="dropdown-item">
         <Link to="#">
-          IIT PKD Students <i className="fas fa-arrow-right"></i>
+          IIT PKD Students &nbsp;<div className="arrow text-end">--›</div>
         </Link>
         <div className="dropdown-submenu">
           <Link to="/scholarships">Scholarships</Link>

@@ -41,7 +41,8 @@ import ManagementMembers from "./pages/ManagementMembers";
 function App() {
   return (
     <Router>
-      <div className="app">
+    
+      <div className="app temp">
         <Navbar />
         
         <div className="content">
