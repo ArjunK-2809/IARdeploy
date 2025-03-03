@@ -84,7 +84,7 @@ function ImageSlider() {
         <div className="aboutusphoto">
           <div>
             <div>
-              <img src={item.image} alt="Director" height={350} width={300} />
+              <img src={item.image} alt="Director" height={300} width={300} />
             </div>
             <div className="namerole">
               {item.name_text}

@@ -249,58 +249,65 @@ white-space: nowrap;
   display: flex;
   flex-direction: row;
 }
-
 .custom-navbar {
-  background-color: #f8f9fa; /* Light background color */
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef); /* Soft gradient */
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 12px;
   font-family: 'Arial', sans-serif;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  border: 1px solid #dee2e6;
 }
 
 .custom-navbar a {
-  color: #ff9d00; /* Blue text */
+  color: #ff9d00; 
   text-decoration: none;
   margin-right: 15px;
   font-size: 1rem;
-  font-weight: 500;
-  transition: color 0.3s ease-in-out;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
-.custom-navbar a:hover {
-  color: #b36500; /* Darker blue on hover */
-  text-decoration: underline;
-}
 
-.custom-
-h1 {
-  font-size: 1.5rem;
-  color: #343a40; /* Dark gray */
+
+.custom-navbar h1 {
+  font-size: 1.8rem;
+  color: #343a40;
   margin-top: 20px;
   margin-bottom: 10px;
-  border-bottom: 2px solid #ff9500; /* Underline with blue */
+  border-bottom: 3px solid #ff9500;
   padding-bottom: 5px;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1px;
 }
 
 .custom-navbar h4 {
-  font-size: 1.2rem;
-  color: #495057; /* Medium gray */
+  font-size: 1.3rem;
+  color: #495057;
   margin-top: 15px;
   margin-bottom: 8px;
+  font-family: 'Playfair Display', serif;
 }
 
 .custom-navbar a:last-child {
-  margin-right: 0; /* Remove margin for the last link */
-}
-
-.custom-navbar h1, .custom-navbar h4 {
-  font-family: 'Georgia', serif; /* Use a serif font for headers */
+  margin-right: 0;
 }
 
 .custom-navbar .highlight {
-  color: #dc3545; /* Highlight text in red */
+  color: #dc3545;
   font-weight: bold;
   font-size: 1.1rem;
+  background: rgba(220, 53, 69, 0.15);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.custom-navbar a, 
+.custom-navbar h1, 
+.custom-navbar h4 {
+  display: block;
+  margin-bottom: 10px; /* Adds space between items */
 }
 
 
