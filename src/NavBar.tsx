@@ -141,7 +141,7 @@ const Navbar = () => {
   onMouseEnter={() => handleDropdown("mobility")}
   onMouseLeave={() => handleDropdown(null)}
 >
-  <a href="/" className="nav-lk">
+  <a href="#" className="nav-lk">
     International Mobility
   </a>
   {activeDropdown === "mobility" && (
@@ -223,7 +223,7 @@ const Navbar = () => {
               </div>
             )}
           </div>
-          <a href="/contact" className="nav-lk">Contact us</a>
+          <Link to="/contact" className="nav-lk">Contact us</Link>
         </div>
         
  
