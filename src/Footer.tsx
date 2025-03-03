@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Footer.css';
 import FAQ from './files/faqs..pdf';
 
@@ -7,7 +8,7 @@ function Footer() {
       <div className="footer">       
         <div className="column">
           <ul>
-            <li><a href={FAQ} className="links" target="_blank" rel="noopener noreferrer">FAQs</a></li>
+            <li><Link to={FAQ} className="links" target="_blank" rel="noopener noreferrer">FAQs</Link></li>
             <li><a href="https://cse.iitpkd.ac.in/location/" className="links" target="_blank" rel="noopener noreferrer">Campus Map</a></li>
             <li><a href="https://iitpkd.ac.in/faculty-list" className="links" target="_blank" rel="noopener noreferrer">IITPKD Faculty Research Profile</a></li>
             <li><a href="https://www.quora.com/What-is-your-review-of-Indian-Institute-of-Technology-Palakkad-IIT-PKD" className="links" target="_blank" rel="noopener noreferrer">Feedback</a></li>

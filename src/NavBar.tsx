@@ -38,9 +38,9 @@ const Navbar = () => {
       <nav className="navbar">
       <div className="d-flex flex-row w-100">
         <div className=" w-10">
-          <a
+          <Link
             className="navbar-brand"
-            href="/"
+            to="/"
             rel="noopener noreferrer"
           >
             <img
@@ -48,7 +48,7 @@ const Navbar = () => {
               alt="IAR Logo"
             />
             
-          </a>
+          </Link>
         </div>
         <div
           className={`navbar-links ${
@@ -105,9 +105,9 @@ const Navbar = () => {
             onMouseEnter={() => handleDropdown("download")}
             onMouseLeave={() => handleDropdown(null)}
           >
-            <a href="#" className="nav-lk">
+            <Link to="#" className="nav-lk">
               Downloads
-            </a>
+            </Link>
             {activeDropdown === "download" && (
               <div className="dropdown-menu">
                 <a href="https://drive.google.com/file/d/1RUlAOd51KJPSR_uIU0GAcdLI-yba61Fn/view">IIT PKD PPT </a>
@@ -123,9 +123,9 @@ const Navbar = () => {
             onMouseEnter={() => handleDropdown("admission")}
             onMouseLeave={() => handleDropdown(null)}
           >
-            <a href="#" className="nav-lk">
+            <Link to="#" className="nav-lk">
               International Admission
-            </a>
+            </Link>
             {activeDropdown === "admission" && (
               <div className="dropdown-menu">
                 <Link to="/applications">Sponsored Applications for Masters and PhD programs</Link>
@@ -242,9 +242,9 @@ const Navbar = () => {
       <Link to="/" onClick={handleClose} >Visit Template</Link>
       
             <h1> DOWNLOADS </h1>
-            <a target="_blank" href="https://drive.google.com/file/d/1RUlAOd51KJPSR_uIU0GAcdLI-yba61Fn/view">IIT PKD PPT </a>
+            <Link target="_blank" to="https://drive.google.com/file/d/1RUlAOd51KJPSR_uIU0GAcdLI-yba61Fn/view">IIT PKD PPT </Link>
             <a target="_blank" href="https://drive.google.com/file/d/1v2t5ba3AaKej8jR6ACvaBczIUzs-5tT7/view"> MoU Template </a>
-            <a target="_blank" href={FactSheet}>Factsheet</a>
+            <Link target="_blank" to={FactSheet}>Factsheet</Link>
             <a target="_blank" href="https://drive.google.com/file/d/1PjjlqNi9IIXaZodSfBf54mMGJOpgh34Y/view"> International Student Guide</a>
             <a target="_blank" href={Flyer}>IIT_PKD Flyer</a>
 
