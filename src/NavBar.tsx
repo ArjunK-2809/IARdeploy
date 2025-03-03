@@ -61,7 +61,7 @@ const Navbar = () => {
           <Link to="/">Home</Link>
           <Link to="/about">About Us</Link>
           <Link to="/life">Life @ IITPKD</Link>
-          <Link to="/students"> International student testimonials </Link>
+          <Link to="/students"> International students testimonials </Link>
           <a href="https://iitpkd.ac.in/" target="blank">IIT PKD main</a>
         </div>
 
@@ -234,11 +234,11 @@ const Navbar = () => {
         </Offcanvas.Header>
         <Offcanvas.Body>
           <div className="custom-navbar">
-          <Link to="/"  onClick={handleClose} >Home</Link>
-      <Link to="/about" onClick={handleClose} >About Us</Link>
-      <Link to="/life" onClick={handleClose} >Life @ IITPKD</Link>
-      <Link to="/students" onClick={handleClose} > International student testimonials</Link>
-      <a href="https://iitpkd.ac.in/" target="_blank" rel="noopener noreferrer"> IIT PKD Main </a>
+          <Link to="/"  onClick={handleClose} >HOME</Link>
+      <Link to="/about" onClick={handleClose} >ABOUT US</Link>
+      <Link to="/life" onClick={handleClose} >LIFE @ IITPKD</Link>
+      <Link to="/students" onClick={handleClose} > INTERNATIONAL STUDETNS TESTIMONIALS</Link>
+      <a href="https://iitpkd.ac.in/" target="_blank" rel="noopener noreferrer"> IIT PKD MAIN </a>
       <Link to="/" onClick={handleClose} >Visit Template</Link>
       
             <h1> DOWNLOADS </h1>
@@ -274,7 +274,7 @@ const Navbar = () => {
             <Link to="/researchprograms" onClick={handleClose} >Research Programs</Link>
             <Link to="/opportunitiesabroad" onClick={handleClose} > Opportunities Abroad for Students </Link>
           
-            <h4> <Link to="/faculty">IIT PKD Faculty</Link> </h4>
+            <h4> <Link to="/faculty">IIT PKD FACULTY</Link> </h4>
 
             <h1> MoUs</h1>
       <Link to="/MoUs#partners" onClick={handleClose} >Our  Partners and Programs</Link>
@@ -287,7 +287,7 @@ const Navbar = () => {
       <Link to="/VISAprovision" onClick={handleClose} >VISA Provisions/Policies</Link>
       <Link to="/VISAextensions" onClick={handleClose} >VISA Extensions</Link>    
 
-      <Link to="/contact" onClick={handleClose} >Contact Us</Link>
+      <Link to="/contact" onClick={handleClose} >CONTACT US</Link>
           </div>
         </Offcanvas.Body>
       </Offcanvas>
