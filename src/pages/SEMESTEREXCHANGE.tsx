@@ -18,17 +18,7 @@ function SEMESTEREXCHANGE() {
                 <h1>Semester Exchange</h1>
                 
 
-            <div className="ytvideo">
-                <div className="ytvideo-card">
-                    <div className="video-thumbnail">
-                        <YouTube videoId="2edpSKJbuao" opts={opts} />
-                    </div>
-                    <div className="video-info">
-                        <h4 className="video-title">Student Exchange Program </h4>
-                        <p className="video-stats"> Q & A SESSION </p>
-                    </div>
-                </div>
-            </div>
+            
 
                 <div className="table-container">
                     <table className="info-table">
@@ -101,6 +91,20 @@ function SEMESTEREXCHANGE() {
                         </tbody>
                     </table>
                 </div>             
+                <h4> For further Details: </h4>
+                <div className="ytvideo">
+                <div className="ytvideo-card">
+                    <div className="video-thumbnail">
+                        <YouTube videoId="2edpSKJbuao" opts={opts} />
+                    </div>
+                    <div className="video-info">
+                        <h4 className="video-title">Student Exchange Program </h4>
+                        <p className="video-stats"> Q & A SESSION </p>
+                    </div>
+                </div>
+                <h5> The Entire list of Prgorams offered can be found <a href='https://iitpkd.ac.in/programs'> here </a></h5>
+            </div>
+
                 <h2>APPLICATIONS & GENERAL QUERIES</h2>
                 <p>Name : Ms Nibedita Dey<br/>
                     Executive, International Relations<br/>

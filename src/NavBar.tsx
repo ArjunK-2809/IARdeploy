@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./NavBar.css";
-import image from "./assets/iar.png";
+import image from "./assets/IIT_PKD_short logo_RGB.jpg";
+// import image from "./assets/images.png";
 import {Link} from 'react-router-dom';
 import FactSheet from './files/Factsheet IITPKD.pdf'
 import Flyer from './files/Flyer_IITPKD.pdf'
@@ -36,6 +37,12 @@ const Navbar = () => {
     <>
       {/* Main Navbar */}
       <nav className="navbar">
+        <div
+          className={`navbar-links ${
+            isMobileMenuOpenPrimary ? "active" : ""
+            } w-90`}
+            onClick={() => setIsMobileMenuOpenPrimary(false)} // Close on click
+            >
       <div className="d-flex flex-row w-100">
         <div className=" w-10">
           <Link
@@ -50,27 +57,43 @@ const Navbar = () => {
             
           </Link>
         </div>
-        <div
-          className={`navbar-links ${
-            isMobileMenuOpenPrimary ? "active" : ""
-            } w-90`}
-            onClick={() => setIsMobileMenuOpenPrimary(false)} // Close on click
-            >
 
         <div className="primary">
+          <h4> International Relations </h4>
           <Link to="/">Home</Link>
           <Link to="/about">About Us</Link>
           <Link to="/life">Life @ IITPKD</Link>
           <Link to="/students"> International students testimonials </Link>
-          <a href="https://iitpkd.ac.in/" target="blank">IIT PKD main</a>
+          <div
+            className="dropdown"
+            onMouseEnter={() => handleDropdown("download")}
+            onMouseLeave={() => handleDropdown(null)}
+          >
+          <Link to="#" className="nav-lk">
+              Downloads
+            </Link>
+            {activeDropdown === "download" && (
+              <div className="dropdown-menu">
+                <a href="https://drive.google.com/file/d/1RUlAOd51KJPSR_uIU0GAcdLI-yba61Fn/view" >IIT PKD PPT </a>
+                <a href="https://drive.google.com/file/d/1v2t5ba3AaKej8jR6ACvaBczIUzs-5tT7/view"> MoU Template </a>
+                <a href={FactSheet}>Factsheet</a>
+                <a href="https://drive.google.com/file/d/1PjjlqNi9IIXaZodSfBf54mMGJOpgh34Y/view"> International Student Guide</a>
+                <a href={Flyer}>IIT_PKD Flyer</a>
+              </div>
+            )}
         </div>
+      </div>
 
         
         </div>
       </div>
+
+      
       <button className="menu-toggle" onClick={handleShow}>
-         ☰
+        ☰
       </button> 
+
+
       </nav>
 
       {/* Secondary Navbar */}
@@ -100,24 +123,7 @@ const Navbar = () => {
               </div>
             )}
           </div>
-          <div
-            className="dropdown"
-            onMouseEnter={() => handleDropdown("download")}
-            onMouseLeave={() => handleDropdown(null)}
-          >
-            <Link to="#" className="nav-lk">
-              Downloads
-            </Link>
-            {activeDropdown === "download" && (
-              <div className="dropdown-menu">
-                <a href="https://drive.google.com/file/d/1RUlAOd51KJPSR_uIU0GAcdLI-yba61Fn/view">IIT PKD PPT </a>
-                <a href="https://drive.google.com/file/d/1v2t5ba3AaKej8jR6ACvaBczIUzs-5tT7/view"> MoU Template </a>
-                <a href={FactSheet}>Factsheet</a>
-                <a href="https://drive.google.com/file/d/1PjjlqNi9IIXaZodSfBf54mMGJOpgh34Y/view"> International Student Guide</a>
-                <a href={Flyer}>IIT_PKD Flyer</a>
-              </div>
-            )}
-          </div>
+          
           <div
             className="dropdown"
             onMouseEnter={() => handleDropdown("admission")}

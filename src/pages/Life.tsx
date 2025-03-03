@@ -35,10 +35,12 @@ function Life(){
             <div className="centered-img" style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%" }}>
                 <img className="image" src={h1} alt='Hostel' width="1050" height="545" />
             </div>
+            <h2 >Hostels, Sahyadri Campus</h2>
             <br/>
             <div className="centered-img" style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%" }}>
                 <img className="image" src={h2} alt='Hostel' width="1050" height="545" />
             </div>
+            <h2 > Cycle Parkings near hostel, Sahyadri Campus</h2>
             <p>To promote students' overall well-being, amenities such as an in-house facility for football, volleyball, basketball, and table tennis are provided. Professional coaches are on hand to guide students in athletics, football, volleyball, and cricket. Badminton enthusiasts can pursue their interests at the 4GB Badminton Academy in Palakkad. To accommodate visitors, guest rooms are available for Institute faculty, staff, and students' families, ensuring a warm welcome.
             </p>
             <h2 style={{textAlign:"center",textDecoration:'None'}}><a href={hostelRules} target='blank'><i className ="fas fa-arrow-right"></i> Hostel Rules</a> </h2>

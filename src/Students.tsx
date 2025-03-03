@@ -2,7 +2,7 @@
 import image13 from './assets/slide13.jpg';
 import image14 from './assets/slide14.jpg';
 import image15 from './assets/slide15.jpg';
-import image12 from './assets/slide12.jpg';
+// import image12 from './assets/slide12.jpg';
 import image16 from './assets/slide16.jpg';
 import image17 from './assets/slide17.jpg';
 import image18 from './assets/slide18.jpg';
@@ -56,13 +56,7 @@ function Students() {
       program: "Mtech in Computer Science and Mathematics",
       image: image15,
     },
-    {
-      heading: "Etana",
-      country: "Zimbabwe",
-      branch: "",
-      program: "",
-      image: image12,
-    },
+    
     {
       heading: "Kritagya Koirala",
       country: "Nepal",
@@ -134,7 +128,7 @@ function Students() {
         </video>
       </div>
       <div className="video-info">
-        <h4 className="video-title"> Queen University </h4>
+        <h4 className="video-title"> Christian from Queen University </h4>
         <p className="video-stats"> Germany </p>
       </div>
       {isFullscreen && <button className="exit-fullscreen-btn" onClick={() => document.exitFullscreen()}>Exit Fullscreen</button>}
