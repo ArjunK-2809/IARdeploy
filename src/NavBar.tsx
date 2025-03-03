@@ -147,7 +147,7 @@ const Navbar = () => {
   {activeDropdown === "mobility" && (
     <div className="dropdown-menu">
       <div className="dropdown-item">
-        <Link to="/">
+        <Link to="#">
           International Students &nbsp; <span className="arrow text-end">--›</span>
         </Link>
         <div className="dropdown-submenu">
