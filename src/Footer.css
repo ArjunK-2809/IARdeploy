@@ -1,5 +1,5 @@
 .links{
-  color: black;
+  color: white;
   text-decoration: none;
 }
 .column a:hover{
@@ -11,11 +11,10 @@
   height: auto;
   display: flex;
   flex-wrap: wrap;
-
+  background-color: black;
   text-align: left;
   padding: 20px;
   box-sizing: border-box;
-  font-weight: bold;
 }
 
 
@@ -33,7 +32,7 @@ ul {
   list-style-position: outside;
 }
 ul li::marker {
-  color: black; /* Change this to your desired color */
+  color: white; /* Change this to your desired color */
 }
 
 

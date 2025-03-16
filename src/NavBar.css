@@ -39,7 +39,6 @@
     padding: 8px 12px;
     border-radius: 8px;
     transition: all 0.3s ease-in-out;
-    font-weight: bold;
   }
 
   .navbar-links a:hover {
@@ -69,7 +68,6 @@
     background-color: white;
     border-radius: 8px;
     border: 1px solid #ccc;
-
     padding: 12px;
     min-width: 160px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
@@ -96,7 +94,6 @@
   }
 
   .dropdown-menu a:hover {
-    color:#E94C26;
     background-color: #f1f1f1;
   }
 
@@ -165,7 +162,6 @@
   }
 
   .nested-dropdown-menu a:hover {
-    background-color: rgb(255, 162, 0);
     color: rgb(248, 248, 243);
   }
 
@@ -198,7 +194,6 @@
     display: inline-block; /* Ensure horizontal alignment */
     
     padding: 6px 12px; /* Optional: Add padding */
-    font-weight: bold;
     color: black;
     transition: color 0.3s;
   }
@@ -295,7 +290,6 @@
 
   .custom-navbar .highlight {
     color: #dc3545;
-    font-weight: bold;
     font-size: 1.1rem;
     background: rgba(220, 53, 69, 0.15);
     padding: 2px 6px;

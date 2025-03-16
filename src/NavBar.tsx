@@ -28,6 +28,7 @@ const Navbar = () => {
   }, []);
 
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleDropdown = (menu:any) => {
     setActiveDropdown(activeDropdown === menu ? null : menu);
   };
@@ -118,7 +119,7 @@ const Navbar = () => {
             </a>
             {activeDropdown === "visits" && (
               <div className="dropdown-menu">
-                <a href="https://docs.google.com/document/d/1rdmSMg_zJv1EI03Hrf2OcQUGjH2Npk4u/edit">Visit Template</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeQPBcVQOHpti5WpJhLwTBGQEEcN9vq_sOBANkHlokEoCOrTg/viewform?usp=header">Visit Template</a>
       
               </div>
             )}
